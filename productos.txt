@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Escuadra",
+    "price": 123.45,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png",
+    "id": 1
+  },
+  {
+    "title": "Calculadora",
+    "price": 234.56,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/calculator-math-tool-school-256.png",
+    "id": 2
+  },
+  {
+    "title": "Globo Terráqueo",
+    "price": 345.67,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/globe-earth-geograhy-planet-school-256.png",
+    "id": 3
+  },
+  {
+    "title": "Birome",
+    "price": 30,
+    "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_973551-MLA31043690372_062019-O.jpg",
+    "id": 4
+  },
+  {
+    "title": "regla",
+    "price": 1.5,
+    "thumbnail": "https://www.shutterstock.com/image-vector/yellow-ruler-icon-flat-isolated-260nw-625702835.jpg",
+    "id": 5
+  }
+]

@@ -1,0 +1,48 @@
+block formulario 
+    div(class="jumbotron")
+        h1(style="color:blue") Ingrese productos 
+        br
+        form(action="/api/productos" method="post")
+            div(class="form-group")
+                label(for="title") <b>Nombre</b>
+                input(id="title" 
+                class="form-control" 
+                type="text" 
+                name="title"
+            )
+            div(class="form-group")
+                label(for="price") <b>Precio</b>
+                input(id="price" 
+                class="form-control" 
+                type="number" 
+                name="price"
+            )
+            div(class="form-group")
+                label(for="thumbnail") <b>Thumbnail</b>
+                input(id="thumbnail" 
+                    class="form-control"
+                    type="text" 
+                    name="thumbnail"
+                )
+            button(class="btn btn-success mt-3 mb-5") Enviar
+        h2(class ='color:crimson') Historial
+        if productos && productos.length > 0
+            div(class="table-responsive")
+                table(class="table table-dark")
+                    tr(style="color: yellow") 
+                        th Nombre 
+                        th Precio
+                        th Thumbnail
+                    each producto in productos
+                        tr
+                            td=producto.title
+                            td=producto.price
+                            td=producto.thumbnail
+        else
+            h3.alert.alert-danger no se encontraron datos
+        h2 App Chat 
+        div(id="messages")
+        form(onsubmit='return addMessage()')
+            input(type='text' id="username" placeholder='Usuario')
+            input(type='text' id = 'text' placeholder='Di algo')
+            input(type='submit' value='Enviar')
