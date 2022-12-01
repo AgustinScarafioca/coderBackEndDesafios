@@ -151,6 +151,7 @@ routerProductos.get("/:id", async (req, res) => {
     res.json(await prueba.getById(parseInt(id)))
 })
 
+
 //post
 
 
@@ -194,5 +195,3 @@ const PORT = 8080
 httpServer.listen(PORT, ()=>{
     console.log('Servidor escuchando en ' + PORT)
 })
-
-console.log(mensajes.getAll())
